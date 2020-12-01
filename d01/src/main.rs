@@ -41,9 +41,6 @@ fn three_sum(buffer: String) -> u32 {
     let mut res: u32 = 0;
 
     for i in 0..numbers.len() - 2 {
-        if i > 0 && numbers[i] == numbers[i-1] {
-            continue;
-        }
 
         // use left and right pointers to traverse vec
         let mut left: usize = i + 1;
